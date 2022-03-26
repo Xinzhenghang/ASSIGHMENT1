@@ -25,7 +25,7 @@ public class Student {
                 
                 System.out.println("ID: "+rs.getString("id_customers")+" Age："+rs.getString("first_name"));
                 
-                break;
+               
             }
           
         }
