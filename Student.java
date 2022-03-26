@@ -19,15 +19,11 @@ public class Student {
         Statement stmt = conn.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT id_customers, first_name FROM customers");
         //，rs.next() return true
-             while(true){
+              while(rs.next()){
             
-            if(rs.next()){
-                
                 System.out.println("ID: "+rs.getString("id_customers")+" Age："+rs.getString("first_name"));
                 
-               
-            }
-          
+              
         }
     }
 		
